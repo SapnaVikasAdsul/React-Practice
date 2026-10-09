@@ -1,16 +1,73 @@
-# React + Vite
+# React Practice App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains a React learning project built with Vite. The app brings together common React topics in one place so they can be practiced with small interactive examples instead of only reading notes.
 
-Currently, two official plugins are available:
+## About the Project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The main app is inside the `practicereact` folder. It includes pages for core React concepts, hooks, Redux Toolkit, routing, optimized search, reusable components, and a simple login screen.
 
-## React Compiler
+The goal of this project is to practice how React applications are structured and how different features work together in a real UI.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- React Router navigation between pages
+- Core concept demos for props, conditional rendering, lists, forms, lifting state, composition, rendering, and virtual DOM
+- Hook examples for `useState`, `useEffect`, `useMemo`, `useRef`, `useReducer`, `useCallback`, `useContext`, and `useLayoutEffect`
+- Redux Toolkit user management demo with add, update, delete, and pagination behavior
+- Optimized search examples using debounce and throttling ideas
+- Reusable form and input components
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+
+- React
+- Vite
+- React Router
+- Redux Toolkit
+- React Redux
+- ESLint
+
+## Getting Started
+
+Install dependencies:
+
+```bash
+cd practicereact
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Build the project:
+
+```bash
+npm run build
+```
+
+Run linting:
+
+```bash
+npm run lint
+```
+
+## Project Structure
+
+```text
+practicereact/
+  public/
+  src/
+    optimizedsearch/
+    pages/
+    reacthooks/
+    redux/
+    reusablecomponents/
+    App.jsx
+    main.jsx
+```
+
+## Notes
+
+The `Frequently-Asked-Questions` folder contains extra learning resources and interview preparation PDFs for JavaScript, Node.js, and React.
