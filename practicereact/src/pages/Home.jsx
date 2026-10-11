@@ -26,6 +26,10 @@ const concepts = [
     text: 'Keep shared state in one store and update it with predictable slice actions.',
   },
   {
+    title: 'Redux API Thunk',
+    text: 'Fetch remote users with createAsyncThunk and render loading, success, and error states.',
+  },
+  {
     title: 'Optimized Search',
     text: 'Use debounce logic so expensive search work runs after the user pauses typing.',
   },
@@ -50,6 +54,7 @@ function Home() {
           <Link to="/concepts">Core Concepts</Link>
           <Link to="/hooks">Hooks</Link>
           <Link to="/redux">Redux</Link>
+          <Link to="/redux-api-users">Redux API</Link>
           <Link to="/optimized-search">Optimized Search</Link>
         </div>
       </div>

@@ -6,6 +6,7 @@ import HooksPage from './pages/HooksPage.jsx'
 import Login from './pages/Login.jsx'
 import OptimizedSearchPage from './pages/OptimizedSearchPage.jsx'
 import ReduxPage from './pages/ReduxPage.jsx'
+import ReduxApiUsersPage from './reduxApiUsers/ReduxApiUsersPage.jsx'
 
 const getNavLinkClass = ({ isActive }) => (
   isActive ? 'nav-link active' : 'nav-link'
@@ -37,6 +38,9 @@ function App() {
             <NavLink to="/redux" className={getNavLinkClass}>
               Redux
             </NavLink>
+            <NavLink to="/redux-api-users" className={getNavLinkClass}>
+              Redux API
+            </NavLink>
             <NavLink to="/optimized-search" className={getNavLinkClass}>
               Optimized Search
             </NavLink>
@@ -52,6 +56,7 @@ function App() {
             <Route path="/concepts" element={<ConceptsPage />} />
             <Route path="/hooks" element={<HooksPage />} />
             <Route path="/redux" element={<ReduxPage />} />
+            <Route path="/redux-api-users" element={<ReduxApiUsersPage />} />
             <Route path="/optimized-search" element={<OptimizedSearchPage />} />
             <Route path="/login" element={<Login />} />
           </Routes>
